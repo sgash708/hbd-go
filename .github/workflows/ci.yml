@@ -20,7 +20,7 @@ jobs:
       - name: Test
         run: |
           go test ./...
-          go test -v -coverprofile=../test_result/cover.out ./...  > ../test_result/coverage.txt
+          go test -v `go list ./... | grep -v examples/` -coverprofile=../test_result/cover.out ./...  > ../test_result/coverage.txt
           go tool cover -html=../test_result/cover.out -o ../test_result/cover.html
 
       - name: Show Test Coverage Results
