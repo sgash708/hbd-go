@@ -1,0 +1,80 @@
+=== RUN   TestCalAge
+=== PAUSE TestCalAge
+=== RUN   TestCalAgeNowTime
+=== PAUSE TestCalAgeNowTime
+=== RUN   TestNow
+=== PAUSE TestNow
+=== CONT  TestCalAge
+=== RUN   TestCalAge/Success_85
+=== PAUSE TestCalAge/Success_85
+=== RUN   TestCalAge/Success_0_today
+=== PAUSE TestCalAge/Success_0_today
+=== RUN   TestCalAge/Success_0_future
+=== PAUSE TestCalAge/Success_0_future
+=== RUN   TestCalAge/Success_1
+=== PAUSE TestCalAge/Success_1
+=== RUN   TestCalAge/Success_21_leapYear
+=== PAUSE TestCalAge/Success_21_leapYear
+=== RUN   TestCalAge/Success_121_leapYear
+=== PAUSE TestCalAge/Success_121_leapYear
+=== RUN   TestCalAge/Success_98_leapYear
+=== PAUSE TestCalAge/Success_98_leapYear
+=== CONT  TestCalAge/Success_85
+=== CONT  TestNow
+=== RUN   TestNow/Success_nowtime
+=== PAUSE TestNow/Success_nowtime
+=== RUN   TestNow/Success_faketime
+=== PAUSE TestNow/Success_faketime
+=== CONT  TestNow/Success_nowtime
+=== CONT  TestCalAgeNowTime
+=== RUN   TestCalAgeNowTime/Success_85
+=== PAUSE TestCalAgeNowTime/Success_85
+=== RUN   TestCalAgeNowTime/Success_0
+=== PAUSE TestCalAgeNowTime/Success_0
+=== RUN   TestCalAgeNowTime/Success_0_future
+=== PAUSE TestCalAgeNowTime/Success_0_future
+=== RUN   TestCalAgeNowTime/Success_1
+=== PAUSE TestCalAgeNowTime/Success_1
+=== RUN   TestCalAgeNowTime/Success_21_leapYear
+=== PAUSE TestCalAgeNowTime/Success_21_leapYear
+=== RUN   TestCalAgeNowTime/Success_121_leapYear
+=== PAUSE TestCalAgeNowTime/Success_121_leapYear
+=== RUN   TestCalAgeNowTime/Success_98_leapYear
+=== PAUSE TestCalAgeNowTime/Success_98_leapYear
+=== CONT  TestCalAgeNowTime/Success_85
+=== CONT  TestCalAge/Success_98_leapYear
+=== CONT  TestCalAge/Success_121_leapYear
+=== CONT  TestCalAge/Success_21_leapYear
+=== CONT  TestCalAge/Success_1
+=== CONT  TestCalAge/Success_0_future
+=== CONT  TestCalAge/Success_0_today
+--- PASS: TestCalAge (0.00s)
+    --- PASS: TestCalAge/Success_85 (0.00s)
+    --- PASS: TestCalAge/Success_98_leapYear (0.00s)
+    --- PASS: TestCalAge/Success_121_leapYear (0.00s)
+    --- PASS: TestCalAge/Success_21_leapYear (0.00s)
+    --- PASS: TestCalAge/Success_1 (0.00s)
+    --- PASS: TestCalAge/Success_0_future (0.00s)
+    --- PASS: TestCalAge/Success_0_today (0.00s)
+=== CONT  TestNow/Success_faketime
+--- PASS: TestNow (0.00s)
+    --- PASS: TestNow/Success_nowtime (0.00s)
+    --- PASS: TestNow/Success_faketime (0.00s)
+=== CONT  TestCalAgeNowTime/Success_98_leapYear
+=== CONT  TestCalAgeNowTime/Success_121_leapYear
+=== CONT  TestCalAgeNowTime/Success_21_leapYear
+=== CONT  TestCalAgeNowTime/Success_1
+=== CONT  TestCalAgeNowTime/Success_0_future
+=== CONT  TestCalAgeNowTime/Success_0
+--- PASS: TestCalAgeNowTime (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_85 (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_98_leapYear (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_121_leapYear (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_21_leapYear (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_1 (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_0_future (0.00s)
+    --- PASS: TestCalAgeNowTime/Success_0 (0.00s)
+PASS
+coverage: 100.0% of statements
+ok  	github.com/sgash708/hbd-go	0.002s	coverage: 100.0% of statements
+?   	github.com/sgash708/hbd-go/examples	[no test files]

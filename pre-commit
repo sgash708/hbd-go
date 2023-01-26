@@ -1,9 +1,0 @@
-#!/bin/sh
-
-go install honnef.co/go/tools/cmd/staticcheck@latest
-
-echo Running static check for golang
-staticcheck ./...
-
-echo Format source code
-go fmt ./...
