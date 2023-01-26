@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  setup:
+    container_name: dev-setup
+    image: alpine:latest
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: cp pre-commit .git/hooks/pre-commit
