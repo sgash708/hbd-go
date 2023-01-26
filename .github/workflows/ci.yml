@@ -13,17 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version: 1.19
 
-      - name: Build App
-        run: |
-          make add-network
-          make build-up
-
-      - name: Test with docker
+      - name: Test
         run: |
           go test ./...
-          go test -v -coverprofile=../test_result/cover.out ./...  > ../test_result/coverage.txt
-          go tool cover -html=../test_result/cover.out -o ../test_result/cover.html
+          go test -v `go list ./... | grep -v examples/` -coverprofile=test_result/cover.out ./...  > test_result/coverage.txt
+          go tool cover -html=test_result/cover.out -o test_result/cover.html
 
       - name: Show Test Coverage Results
         run: less test_result/coverage.txt

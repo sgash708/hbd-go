@@ -7,7 +7,7 @@ codeToTestRatio:
     - '**/*.go'
     - '!**/*_test.go'
   test:
-    - 'server/**/*_test.go'
+    - '**/*_test.go'
 testExecutionTime:
   if: true
 diff:
